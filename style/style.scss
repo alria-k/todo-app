@@ -102,8 +102,6 @@
 			}
 		}
 		&__block {
-			&-top {
-			}
 			&-center {
                 margin-bottom: 15px;
 			}
@@ -141,8 +139,6 @@
 			}
 		}
 		&__items {
-			&-left {
-			}
             &-box{
                 .todo-circle__checkbox{
                     &:checked{
@@ -208,9 +204,9 @@
         }
 }
 .scheme {
-		&__change {
-            cursor: pointer;
-		}
+	&__change {
+        cursor: pointer;
+	}
 }
 .active{
     display: block;
@@ -218,6 +214,3 @@
 .completed{
     display: block;
 }
-// .all{
-//     display: block;
-// }

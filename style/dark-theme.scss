@@ -1,0 +1,31 @@
+.main{
+    background-image: url('../images/bg-desktop-dark.jpg');
+    background-color: hsl(235, 21%, 11%);
+}
+.todo {
+    &-input {
+        color: white;
+    }
+    &__box {
+        color: white;
+        &-top {
+            background-color: hsl(235, 24%, 19%);
+        }
+        &-main {
+            background-color: hsl(235, 24%, 19%);
+        }
+    }
+    &__functional {
+        &-item {
+            &:hover{
+                color: hsl(236, 33%, 92%);
+            }
+        }
+    }
+}
+.theme-icon[data-theme="light"]{
+    display: block;
+}
+.theme-icon[data-theme="dark"]{
+    display: none;
+}
