@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -55,38 +54,114 @@
               <div class="todo__block">
                 <div class="todo__block-center">
                   <ul class="todo__items-box">
-                    <!-- <li class="todo-item">
+                    <li class="todo-item completed" data-functional="completed">
+                      <label class="todo-circle__box">
+                        <input
+                          class="todo-circle__checkbox"
+                          type="checkbox"
+                          checked
+                        />
+                        <span class="custom__circle complete__todo"></span>
+                        <label class="todo-item__text"
+                          >Complete online JavaScript Courses</label
+                        >
+                      </label>
+                      <span class="cross">
+                        <img
+                          class="cross__img"
+                          src="./images/icon-cross.svg"
+                          alt=""
+                        />
+                      </span>
+                    </li>
+                    <li class="todo-item active" data-functional="active">
                       <label class="todo-circle__box">
                         <input class="todo-circle__checkbox" type="checkbox" />
-                        <span class="custom__circle"></span>
-                        <label class="todo-item__text">lol</label>
-                      </label>
-                      <span class="cross"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
+                        <span class="custom__circle complete__todo"></span>
+                        <label class="todo-item__text"
+                          >Jog around the park 3x</label
                         >
-                          <path
-                            fill="#494C6B"
-                            fill-rule="evenodd"
-                            d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"
-                          />
-                        </svg>
+                      </label>
+                      <span class="cross">
+                        <img
+                          class="cross__img"
+                          src="./images/icon-cross.svg"
+                          alt=""
+                        />
                       </span>
-                    </li> -->
+                    </li>
+                    <li class="todo-item active" data-functional="active">
+                      <label class="todo-circle__box">
+                        <input class="todo-circle__checkbox" type="checkbox" />
+                        <span class="custom__circle complete__todo"></span>
+                        <label class="todo-item__text"
+                          >10 minutes meditation</label
+                        >
+                      </label>
+                      <span class="cross">
+                        <img
+                          class="cross__img"
+                          src="./images/icon-cross.svg"
+                          alt=""
+                        />
+                      </span>
+                    </li>
+                    <li class="todo-item active" data-functional="active">
+                      <label class="todo-circle__box">
+                        <input class="todo-circle__checkbox" type="checkbox" />
+                        <span class="custom__circle complete__todo"></span>
+                        <label class="todo-item__text">Read for 1 hour</label>
+                      </label>
+                      <span class="cross">
+                        <img
+                          class="cross__img"
+                          src="./images/icon-cross.svg"
+                          alt=""
+                        />
+                      </span>
+                    </li>
+                    <li class="todo-item active" data-functional="active">
+                      <label class="todo-circle__box">
+                        <input class="todo-circle__checkbox" type="checkbox" />
+                        <span class="custom__circle complete__todo"></span>
+                        <label class="todo-item__text">Pick up groceries</label>
+                      </label>
+                      <span class="cross">
+                        <img
+                          class="cross__img"
+                          src="./images/icon-cross.svg"
+                          alt=""
+                        />
+                      </span>
+                    </li>
+                    <li class="todo-item active" data-functional="active">
+                      <label class="todo-circle__box">
+                        <input class="todo-circle__checkbox" type="checkbox" />
+                        <span class="custom__circle complete__todo"></span>
+                        <label class="todo-item__text"
+                          >Complete Todo App on Frontend Mentor</label
+                        >
+                      </label>
+                      <span class="cross">
+                        <img
+                          class="cross__img"
+                          src="./images/icon-cross.svg"
+                          alt=""
+                        />
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="todo__functional">
-                <p class="todo__items-left"><span>0</span> items left</p>
+                <p class="todo__items-left"><span>5</span> items left</p>
                 <div class="todo__functional-box">
                   <label class="todo__functional-inner">
                     <input
                       class="functional-radio"
                       type="radio"
                       name="functional"
-                      data-functional="All"
+                      data-functional="todo-item"
                       checked
                     />
                     <span class="todo__functional-item">All</span>
@@ -96,7 +171,7 @@
                       class="functional-radio"
                       type="radio"
                       name="functional"
-                      data-functional="Active"
+                      data-functional="active"
                     />
                     <span class="todo__functional-item">Active</span>
                   </label>
@@ -105,7 +180,7 @@
                       class="functional-radio"
                       type="radio"
                       name="functional"
-                      data-functional="Completed"
+                      data-functional="completed"
                     />
                     <span class="todo__functional-item">Completed</span>
                   </label>

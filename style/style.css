@@ -188,9 +188,9 @@
 .todo-item {
   padding: 20px 40px;
   position: relative;
-  display: flex;
   align-items: center;
   border-bottom: 1px solid #777a92;
+  display: block;
 }
 
 .todo-item:hover .cross {
@@ -213,10 +213,24 @@
   transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.todo-item .cross:hover {
+  visibility: visible;
+  opacity: 1;
+  z-index: 11;
+}
+
 .todo-item .cross:hover svg path {
   fill: #9092a7;
 }
 
 .scheme__change {
   cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.completed {
+  display: block;
 }
